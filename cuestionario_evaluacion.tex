@@ -1,0 +1,155 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{amssymb}
+\usepackage{multirow}
+
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+% Colores
+\definecolor{headerblue}{RGB}{52, 101, 164}
+\definecolor{lightblue}{RGB}{220, 234, 255}
+\definecolor{lightgray}{RGB}{245, 245, 245}
+\definecolor{blockgreen}{RGB}{39, 128, 77}
+\definecolor{blockpurple}{RGB}{100, 60, 160}
+\definecolor{blockorange}{RGB}{180, 90, 0}
+
+% Formato de secciones
+\titleformat{\section}[block]{\large\bfseries\color{white}}{}{0em}{}
+\titlespacing{\section}{0pt}{10pt}{6pt}
+
+% Comando para encabezado de bloque
+\newcommand{\bloqueheader}[2]{%
+  \vspace{8pt}
+  {\large\bfseries\color{#1} #2}
+  \vspace{4pt}
+  \hrule height 1.5pt \relax
+  \vspace{6pt}
+}
+
+\begin{document}
+
+% ── Encabezado ────────────────────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries\color{headerblue} Cuestionario de Autoevaluación}\\[4pt]
+  {\large\color{headerblue} Evaluación del tema · Matemáticas · 2.º ESO}
+\end{center}
+
+\vspace{4pt}
+\noindent\colorbox{lightblue}{\parbox{\dimexpr\linewidth-2\fboxsep}{%
+  \small\itshape\color{headerblue}
+  \quad Marca con una \textbf{X} la casilla que mejor refleje tu opinión.
+  ¡Sé sincero/a; no hay respuestas correctas o incorrectas!
+}}
+
+\vspace{10pt}
+
+\noindent
+\begin{tabularx}{\linewidth}{lX}
+  \textbf{Nombre (opcional):} & \underline{\hspace{7cm}} \\[6pt]
+  \textbf{Fecha:}             & \underline{\hspace{7cm}} \\
+\end{tabularx}
+
+\vspace{12pt}
+
+% ── Bloque 1 ─────────────────────────────────────────────────────────────────
+\bloqueheader{blockgreen}{Bloque 1 — Mi trabajo y actitud}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\linewidth}{>{\footnotesize}c X >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm}}
+  \toprule
+  \textbf{N.º} & \textbf{Pregunta} 
+    & \textbf{Poco \(\square\)} 
+    & \textbf{Bastante \(\square\)} 
+    & \textbf{Mucho \(\square\)} \\
+  \midrule
+  1 & He prestado atención en clase durante este tema.           & $\square$ & $\square$ & $\square$ \\
+  \rowcolor{lightgray}
+  2 & He hecho los ejercicios y tareas propuestos.               & $\square$ & $\square$ & $\square$ \\
+  3 & He preguntado mis dudas cuando no entendía algo.           & $\square$ & $\square$ & $\square$ \\
+  \rowcolor{lightgray}
+  4 & Me he esforzado aunque el tema me resultaba difícil.       & $\square$ & $\square$ & $\square$ \\
+  5 & Creo que he aprendido los contenidos principales del tema. & $\square$ & $\square$ & $\square$ \\
+  \bottomrule
+\end{tabularx}
+
+\vspace{12pt}
+
+% ── Bloque 2 ─────────────────────────────────────────────────────────────────
+\bloqueheader{blockpurple}{Bloque 2 — Mi relación con las Matemáticas}
+
+\begin{tabularx}{\linewidth}{>{\footnotesize}c X >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm}}
+  \toprule
+  \textbf{N.º} & \textbf{Pregunta} 
+    & \textbf{Poco \(\square\)} 
+    & \textbf{Bastante \(\square\)} 
+    & \textbf{Mucho \(\square\)} \\
+  \midrule
+  6 & Me ha parecido interesante este tema.                              & $\square$ & $\square$ & $\square$ \\
+  \rowcolor{lightgray}
+  7 & Entiendo para qué sirve lo que hemos trabajado.                    & $\square$ & $\square$ & $\square$ \\
+  8 & Me siento capaz de superar la prueba o tarea de este tema.         & $\square$ & $\square$ & $\square$ \\
+  \bottomrule
+\end{tabularx}
+
+\vspace{12pt}
+
+% ── Bloque 3 ─────────────────────────────────────────────────────────────────
+\bloqueheader{blockorange}{Bloque 3 — El trabajo del profesor/a}
+
+\begin{tabularx}{\linewidth}{>{\footnotesize}c X >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm}}
+  \toprule
+  \textbf{N.º} & \textbf{Pregunta} 
+    & \textbf{Poco \(\square\)} 
+    & \textbf{Bastante \(\square\)} 
+    & \textbf{Mucho \(\square\)} \\
+  \midrule
+  9  & Las explicaciones han sido claras y fáciles de seguir.      & $\square$ & $\square$ & $\square$ \\
+  \rowcolor{lightgray}
+  10 & El ritmo de la clase ha sido adecuado para mí.              & $\square$ & $\square$ & $\square$ \\
+  11 & He sentido que podía preguntar sin problema.                & $\square$ & $\square$ & $\square$ \\
+  \rowcolor{lightgray}
+  12 & Los ejemplos y actividades me han ayudado a entender.       & $\square$ & $\square$ & $\square$ \\
+  \bottomrule
+\end{tabularx}
+
+\vspace{14pt}
+
+% ── Preguntas abiertas ────────────────────────────────────────────────────────
+\bloqueheader{headerblue}{Preguntas abiertas \normalfont\small(opcional)}
+
+\noindent\textbf{¿Qué es lo que más te ha gustado o te ha resultado más útil de este tema?}
+
+\vspace{6pt}
+\noindent\underline{\hspace{\linewidth}}
+
+\vspace{8pt}
+\noindent\underline{\hspace{\linewidth}}
+
+\vspace{12pt}
+\noindent\textbf{¿Qué cambiarías o mejorarías?}
+
+\vspace{6pt}
+\noindent\underline{\hspace{\linewidth}}
+
+\vspace{8pt}
+\noindent\underline{\hspace{\linewidth}}
+
+\vspace{16pt}
+
+% ── Pie ──────────────────────────────────────────────────────────────────────
+\begin{center}
+  \small\color{gray}\itshape
+  Gracias por tu opinión — ¡nos ayuda a mejorar juntos!
+\end{center}
+
+\end{document}
